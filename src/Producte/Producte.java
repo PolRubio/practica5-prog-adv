@@ -5,10 +5,8 @@ public class Producte {
     private int identificador;
     private Producte[] reaccions;
 
-    public Producte(String[] dades, int identificador, Producte[] reaccions) {
-        this.dades = dades;
+    public Producte(int identificador) {
         this.identificador = identificador;
-        this.reaccions = reaccions;
     }
 
     public String[] getDades() {
@@ -23,9 +21,6 @@ public class Producte {
     
     public void setDades(String[] dades) {
         this.dades = dades;
-    }
-    public void setIdentificador(int identificador) {
-        this.identificador = identificador;
     }
     public void setReaccio(int i, Producte reaccio) {
         this.reaccions[i] = reaccio;
